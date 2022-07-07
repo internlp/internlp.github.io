@@ -1,7 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="InterNLP 2022">
+    <meta name="keywords" content="interactive learning, NLP, AI, ML, human in the loop, HITL">
+    <title>InterNLP 2022</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js "></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js "></script>
+<![endif]-->
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                    <a href="index.html"><img src="images/HITL.png" alt="human in the loop" width="70"></a>
+                </div>
+                <div class="col-lg-11 col-md-10 col-sm-10 col-xs-6">
+                    <div class="navigation">
+                        <div id="navigation">
+                            <ul>
+                                <li class="active"><a href="index.html" title="Home">Home</a></li>
+                                <li><a href="cfp.html" title="Call for Papers">Call for Papers</a></li>
+                                <li><a href="organization.html" title="Organization">Organization</a> </li>
+                                <li><a href="program_committee.html" title="Program Committee">Program Committee</a> </li>
+                                <li><a href="invited_speakers.html" title="Invited Speakers">Invited Speakers</a> </li>
+                                <li><a href="background_references.html" title="Background & References">Background & References</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="hero-title">Second Workshop on Interactive Learning for Natural Language Processing</h1>
+                    <p class="hero-subtitle"><strong>Workshop at NeurIPS 2022</strong> </p>
+            </div>
+        </div>
+    </div>
+    <div class="space-small bg-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10">
+                    <div class="mb60 text-left section-title">
+                        <!-- section title start-->
+                        <h1>Motivation</h1>
+                        <p>A key aspect of human learning is the ability to learn continuously from various sources of
+                            feedback. In contrast, much of the recent success of deep learning for NLP relies on large
+                            datasets and extensive compute resources to train and fine-tune models, which then remain
+                            fixed. This leaves a research gap for systems that adapt to the changing needs of individual
+                            users or allow users to continually correct errors as they emerge. Learning from user
+                            interaction  is crucial for tasks that require a high grade of personalization and for
+                            rapidly changing or complex, multi-step tasks where collecting and annotating large datasets
+                            is not feasible, but an informed user can provide guidance.</p>
+                    </div>
+                    <!-- /.section title start-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space-small bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10">
+                    <div class="mb60 text-left section-title">
+                        <!-- section title start-->
+                        <h1>What is interactive NLP?</h1>
+                        <p>Interactive Learning for NLP means training, fine-tuning or otherwise adapting an NLP model
+                            to inputs from a human user or teacher. Relevant approaches range from active learning with
+                            a human in the loop, to training with implicit user feedback (e.g. clicks), dialogue systems
+                            that adapt to user utterances, and training with new forms of human input. Interactive
+                            learning is the converse of  learning from datasets collected offline with no human input
+                            during the training process.</p>
+                    </div>
+                    <!-- /.section title start-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space-small bg-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10">
+                    <div class="mb60 text-left section-title">
+                        <!-- section title start-->
+                        <h1>Goals</h1>
+                        <p>The goal of this workshop is to bring together researchers to:</p>
+                        <ul>
+                            <li>Develop <i>novel methods for interactive machine learning</i> of NLP models.</li>
+                            <li>Discuss how to <i>evaluate</i> interactive NLP systems, including models for realistic user simulation.</li>
+                            <li><i>Identify scenarios</i> involving natural language where interactive learning is beneficial.</li>
+                        </ul>
+                        <p>Previous work has been split across different tracks and task-focused workshops, making it
+                            hard to disentangle applications from broadly-applicable methodologies or establish common
+                            practices for evaluating interactive learning systems. We aim to bring together researchers
+                            to share insights on interactive learning from a wide range of NLP-related fields, including,
+                            but not limited to, dialogue systems, question answering, summarization, and educational
+                            applications.</p>
+                        <p>Concerning <i>methodology</i>, we encourage submissions investigating various dimensions of
+                            interactive learning, such as (but not restricted to):</p>
+                        <ul>
+                            <li>Interactive machine learning methods: the wide range of topics discussed above, from
+                                active learning with a user to methods that extract, interpret and aggregate user
+                                feedback or preferences from complex interactions, such as natural language instructions.</li>
+                            <li>User effort:  the amount of user effort required for different types of feedback;
+                                explicit labels require higher user effort than feedback deduced from user interaction
+                                (e.g., clicks, viewtime); how users cope with the system misinterpreting instructions.</li>
+                            <li>Feedback types: different types of feedback require different techniques to incorporate
+                                them into a model. E.g., explicit labels allow us to directly train while user
+                                instructions require interpretation. </li>
+                        </ul>
+                        <p>A major bottleneck for interactive learning approaches is their <i>evaluation</i>, including
+                            a lack of suitable datasets. We therefore encourage submissions that cover research into the
+                            following:</p>
+                        <ul>
+                            <li>Evaluation methods: approaches to assessing interactive methods, such as low-effort,
+                                easily reproducible approaches with real-world users and simulated user models for
+                                automated evaluation.</li>
+                            <li>Reproducibility: procedures for documenting user evaluations and ensuring they are
+                                reproducible.</li>
+                            <li>Data: Introduce novel datasets for training and evaluating interactive models. </li>
+                        </ul>
+                        <p>To investigate <i>scenarios</i> where interactive learning is effective, we invite submissions that
+                            present empirical results for applications of interactive methods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- /.footer-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menumaker.js"></script>
+    <!-- sticky header -->
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/sticky-header.js"></script>
+
 </body>
+
 </html>
