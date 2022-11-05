@@ -243,6 +243,7 @@ label { }
 4.4 Background & Block color 
 ----------------------------------*/
 .bg-light { background-color: #f4f1ec; }
+.bg-shade { background-color: #f7ebd6; }
 .bg-primary { background-color: #aa9144; }
 .bg-default { background-color: #f4f1ec; }
 .bg-white { background-color: #fff; }
