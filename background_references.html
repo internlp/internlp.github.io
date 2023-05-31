@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="InterNLP 2022">
+    <meta name="description" content="InterNLP 2023">
     <meta name="keywords" content="interactive learning, NLP, AI, ML, human in the loop, HITL">
-    <title>InterNLP 2022</title>
+    <title>InterNLP 2023</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
@@ -37,14 +37,15 @@
                         <div id="navigation">
                             <ul>
                                 <li class="active"><a href="index.html" title="Home">Home</a></li>
-								<li><a href="schedule.html" title="Schedule">Schedule</a></li>
+								<!-- <li><a href="schedule.html" title="Schedule">Schedule</a></li> -->
                                 <li><a href="cfp.html" title="Call for Papers">Call for Papers</a></li>
                                 <li><a href="organization.html" title="Organization">Organization</a> </li>
                                 <li><a href="program_committee.html" title="Program Committee">Program Committee</a> </li>
                                 <li><a href="invited_speakers.html" title="Invited Speakers">Invited Speakers</a> </li>
-								<li><a href="accepted_papers.html" title="Accepted Papers">Accepted Papers</a> </li>
+								<!-- <li><a href="accepted_papers.html" title="Accepted Papers">Accepted Papers</a> </li> -->
                                 <li><a href="background_references.html" title="Background & References">Background & References</a> </li>
-                            </ul>
+                                 <li><a href="previous_workshops.html" title="Past Workshops">Past Workshops</a> </li>
+                           </ul>
                         </div>
                     </div>
                 </div>
@@ -55,7 +56,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h1 class="hero-title">Second Workshop on Interactive Learning for Natural Language Processing</h1>
+                    <h1 class="hero-title">Third Workshop on Interactive Learning for Natural Language Processing</h1>
                     <p class="hero-subtitle"><strong>Background & References</strong> </p>
                 </div>
         </div>
@@ -67,12 +68,12 @@
                     <div class="mb60 text-left section-title">
                         <!-- section title start-->
                         <h1>What is interactive NLP?</h1>
-                        <p><b>Interactive Learning for NLP</b> means training, fine-tuning or otherwise adapting an NLP model
-                            to inputs from a human user or teacher. Relevant approaches range from active learning with
-                            a human in the loop, to training with implicit user feedback (e.g. clicks), dialogue systems
-                            that adapt to user utterances, and training with new forms of human input. Interactive
-                            learning is the converse of  learning from datasets collected offline with no human input
-                            during the training process.</p>
+                        <p>Interactive machine learning [IML; 7] studies algorithms that learn from data collected 
+						through interaction with a computational agent or human in a shared environment, through
+						feedback on model decisions. In contrast to the common paradigm of supervised learning, 
+						IML does not assume access to pre-collected labeled data, thereby decreasing data costs. 
+						Instead, it allows systems to improve over time, empowering non-expert users to provide feedback. 
+						IML has seen wide success in areas such as video games [24] and recommendation systems [13].</p>
                     </div>
                     <!-- /.section title start-->
                 </div>
@@ -86,27 +87,21 @@
                     <div class="mb60 text-left section-title">
                         <!-- section title start-->
                         <h1>What are current approaches?</h1>
-                        <p>Existing methods often treat the user as a human in the loop who is limited to the role of an
-                            oracle. Current NLP research in this vein focuses on techniques such as active learning [1,2],
-                            learning from demonstration [3], and preference learning [4]. Relatively little research has
-                            considered end users choosing the agent's curriculum or machine teaching (e.g., [5]). A
-                            major challenge is adapting large neural models that are expensive to train to a continual
-                            stream of user feedback. An emerging body of work has begun to explore  user feedback via
-                            natural language explanations [6], advice [7] and instructions [8]. Interpreting such inputs
-                            requires relating natural language to the world in which the system operates [9]. GPT-3 [10]
-                            also allows new tasks to be specified via text interaction, presenting new opportunities for
-                            interactive NLP research. While most approaches for dialogue systems do not from learn from
-                            the user's utterances, recent research also investigates conversational methods for eliciting
-                            preferences [11], user intent [12] and language acquisition [13].</br></br>
-
-                            Evaluation with real users is costly, making clear and consistent best practices crucial,
-                            along with user simulations. However, current simulated user models assume random errors in
-                            user feedback, which is often unrealistic [14]. Explainability and interpretability also
-                            play key roles in helping users to understand the effects of their feedback on the model's
-                            behaviour [15]. In summary, there are many promising threads of research that address
-                            different aspects of interactive systems but leave many open questions. There is now a great
-                            opportunity to draw these threads together to develop NLP systems that learn continually
-                            from user interaction.
+                        <p>
+						Although most downstream applications of NLP involve interactions with humans—e.g., via labels,
+						demonstrations, corrections, or evaluation—common NLP models are not built to learn from or
+						adapt to users through interaction. There remains a large research gap that must be closed to enable
+						NLP systems that adapt on-the-fly to the changing needs of humans and dynamic environments through interaction.
+						</br>
+						While still understudied, there is growing interest in NLP models that learn through interaction,
+						especially when considering most recent developments with large language models [8]. 
+						Some systems learn with computational agent or human feedback in the form of low-level labels using
+						techniques such as active learning [12], imitation learning [3, 23], pairwise feedback [23, 5], 
+						preference learning [25], contextual bandits [10, 9, 26], and reinforcement learning [17, 27, 22]. 
+						The most popular form of feedback recently is reinforcement learning from human feedback (RLHF) [21, 1, 2, 20, 17, 30, 27, 31], 
+						which has lead to the development of ChatGPT [20]. In contrast to these low-level label feedback, natural language feedback systems 
+						aim to leverage the full expressivity of natural language to handle nuanced and expressive feedback [14]. 
+						Types of natural language feedback studied include explanations [16], advice [15, 18, 28], instructions [29, 11], descriptions [6, 19], and prompts [4].
                         </p>
                     </div>
                     <!-- /.section title start-->
@@ -122,6 +117,38 @@
                         <!-- section title start-->
                         <h1>References</h1>
                         <ol>
+						<li> Y. Bai, A. Jones, K. Ndousse, A. Askell, A. Chen, N. DasSarma, D. Drain, S. Fort, D. Ganguli, T. Henighan, et al. Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback. arXiv preprint arXiv:2204.05862, 2022.</li>
+						<li> M. Bakker, M. Chadwick, H. Sheahan, M. Tessler, L. Campbell-Gillingham, J. Balaguer, N. McAleese, A. Glaese, J. Aslanides, M. Botvinick, et al. Fine-tuning Language Models to Find Agreement among Humans with Diverse Preferences. Proceedings of Neural Information Processing Systems, 2022. </li>
+						<li> K. Brantley, A. Sharaf, and H. Daumé, III. Active imitation learning with noisy guidance. In The 58th annual meeting of the Association for Computational Linguistics. ACL, 2020.</li>
+						<li> T. B. Brown, B. Mann, N. Ryder, M. Subbiah, J. Kaplan, P. Dhariwal, A. Neelakantan, P. Shyam, G. Sastry, A. Askell, et al. Language models are few-shot learners. arXiv preprint arXiv:2005.14165, 2020.</li>
+						<li> A. Chen, J. Scheurer, T. Korbak, J. A. Campos, J. S. Chan, S. R. Bowman, K. Cho, and E. Perez. Improving code generation by training with natural language feedback. arXiv preprint arXiv:2303.16749, 2023.</li>
+						<li> C. Colas, T. Karch, N. Lair, J.-M. Dussoux, C. Moulin-Frier, P. Dominey, and P.-Y. Oudeyer. Language as a cognitive tool to imagine goals in curiosity driven exploration. NeurIPS, 33:3761–3774, 2020.</li>
+						<li> J. A. Fails and D. R. Olsen Jr. Interactive machine learning. In Proceedings of the 8th international conference on Intelligent user interfaces, pages 39–45, 2003.</li>
+						<li> P. Fernandes, A. Madaan, E. Liu, A. Farinhas, P. H. Martins, A. Bertsch, J. G. de Souza, S. Zhou, T. Wu, G. Neubig, et al. Bridging the gap: A survey on integrating (human) feedback for natural language generation. arXiv preprint arXiv:2305.00955, 2023.</li>
+						<li> G. Gao, H.-T. Chen, Y. Artzi, and E. Choi. Continually improving extractive qa via human feedback. arXiv preprint arXiv:2305.12473, 2023.</li>
+						<li> G. Gao, E. Choi, and Y. Artzi. Simulating bandit learning from user feedback for extractive question answering. arXiv preprint arXiv:2203.10079, 2022.</li>
+						<li> N. Kojima, A. Suhr, and Y. Artzi. Continual learning for grounded instruction generation by observing human following behavior. TACL, 9:1303–1319, 2021.</li>
+						<li> J.-U. Lee, C. M. Meyer, and I. Gurevych. Empowering active learning to jointly optimize system and user demands. In The 58th annual meeting of the Association for Computational Linguistics, pages 4233–4247, July 2020.</li>
+						<li> L. Li, W. Chu, J. Langford, and R. E. Schapire. A contextual-bandit approach to personalized news article recommendation. In Proceedings of the 19th international conference on World wide web, pages 661–670, 2010.</li>
+						<li> A. A. Lipnevich and J. K. Smith. Effects of differential feedback on students examination performance. Journal of Experimental Psychology: Applied, 15(4):319, 2009.</li>
+						<li> N. Mehta and D. Goldwasser. Improving natural language interaction with robots using advice. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 1962–1967. ACL, June 2019.</li>
+						<li> S. Murty, P. W. Koh, and P. Liang. ExpBERT: Representation engineering with natural language explanations. In The 58th annual meeting of the Association for Computational Linguistics. ACL, 2020.</li>
+						<li> R. Nakano, J. Hilton, S. Balaji, J. Wu, L. Ouyang, C. Kim, C. Hesse, S. Jain, V. Kosaraju, W. Saunders, et al. Webgpt: Browser-assisted question-answering with human feedback. arXiv preprint arXiv:2112.09332, 2021.</li>
+						<li> K. Nguyen and H. Daumé III. Help, anna! visual navigation with natural multimodal assistance via retrospective curiosity-encouraging imitation learning. arXiv preprint arXiv:1909.01871, 2019.</li>
+						<li> K. X. Nguyen, D. Misra, R. Schapire, M. Dudík, and P. Shafto. Interactive learning from activity description. In International Conference on Machine Learning, pages 8096–8108. PMLR, 2021.</li>
+						<li> OpenAI. https://openai.com/blog/chatgpt, 2023.</li>
+						<li> L. Ouyang, J. Wu, X. Jiang, D. Almeida, C. Wainwright, P. Mishkin, C. Zhang, S. Agarwal, K. Slama, A. Ray, et al. Training Language Models to Follow Instructions with Human Feedback. In Proceedings of Neural Information Processing Systems, 2022.</li>
+						<li> J. S. Park, J. C. O’Brien, C. J. Cai, M. R. Morris, P. Liang, and M. S. Bernstein. Generative agents: Interactive simulacra of human behavior. arXiv preprint arXiv:2304.03442, 2023.</li>
+						<li> J. Scheurer, J. A. Campos, T. Korbak, J. S. Chan, A. Chen, K. Cho, and E. Perez. Training language models with language feedback at scale. arXiv preprint arXiv:2303.16755, 2023.</li>
+						<li> D. Silver, A. Huang, C. J. Maddison, A. Guez, L. Sifre, G. Van Den Driessche, J. Schrittwieser, I. Antonoglou, V. Panneershelvam, M. Lanctot, et al. Mastering the game of go with deep neural networks and tree search. nature, 529(7587):484–489, 2016.</li>
+						<li> E. Simpson, Y. Gao, and I. Gurevych. Interactive text ranking with Bayesian optimisation: A case study on community QA and summarisation. arXiv preprint arXiv:1911.10183, 2019.</li>
+						<li> A. Sokolov, S. Riezler, and T. Urvoy. Bandit structured prediction for learning from partial feedback in statistical machine translation. arXiv preprint arXiv:1601.04468, 2016.</li>
+						<li> N. Stiennon, L. Ouyang, J. Wu, D. Ziegler, R. Lowe, C. Voss, A. Radford, D. Amodei, and P. F. Christiano. Learning to summarize with human feedback. NeurIPS, 33:3008–3021, 2020.</li>
+						<li> J. Thomason, M. Murray, M. Cakmak, and L. Zettlemoyer. Vision-and-dialog navigation. In Conference on Robot Learning, pages 394–406. PMLR, 2020.</li>
+						<li> O. Watkins, A. Gupta, T. Darrell, P. Abbeel, and J. Andreas. Teachable reinforcement learning via advice distillation. NeurIPS, 34, 2021.</li>
+						<li> J. Wu, L. Ouyang, D. M. Ziegler, N. Stiennon, R. Lowe, J. Leike, and P. Christiano. Recursively summarizing books with human feedback. arXiv preprint arXiv:2109.10862, 2021.</li>
+						<li> D. M. Ziegler, N. Stiennon, J. Wu, T. B. Brown, A. Radford, D. Amodei, P. Christiano, and G. Irving. Fine-tuning language models from human preferences. arXiv preprint arXiv:1909.08593, 2019.</li>
+						<!-- 
                             <li>Klie, J.-C., de Castilho, R. E., and Gurevych, I. (2020). From zero to hero: Human-in-the-loop entity linking in low resource domains. In The 58th annual meeting of the Association for Computational Linguistics.</li>
                             <li>Lee, J.-U., Meyer, C. M., and Gurevych, I. (2020). Empowering active learning to jointly optimize system and user demands. In The 58th annual meeting of the Association for Computational Linguistics.</li>
                             <li>Brantley, K., Sharaf, A., and Daumé, III, H. (2020). Active imitation learning with noisy guidance. In Proceedings of the 58th Conference of the Association for Computational Linguistics.</li>
@@ -136,7 +163,7 @@
                             <li>Yu, L., Chen, H., Wang, S. I., Lei, T., and Artzi, Y. (2020). Interactive classification by asking informative questions. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, pages 2664–2680. ACL.</li>
                             <li>Zhang, H., Yu, H., and Xu, W. (2018). Interactive language acquisition with oneshot visual concept learning through a conversational game. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics, pages 2609–2619. ACL.</li>
                             <li>Gao, Y., Meyer, C. M., and Gurevych, I. (2019). Preference-based interactive multidocument summarisation. Information Retrieval Journal, pages 1–31.</li>
-                            <li>Smith-Renner, A., Fan, R., Birchfield, M., Wu, T., Boyd-Graber, J., Weld, D. S., and Findlater, L. (2020). No explainability without accountability: An empirical study of explanations and feedback in interactive ML. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems, pages 1–13.</li>
+                            <li>Smith-Renner, A., Fan, R., Birchfield, M., Wu, T., Boyd-Graber, J., Weld, D. S., and Findlater, L. (2020). No explainability without accountability: An empirical study of explanations and feedback in interactive ML. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems, pages 1–13.</li> -->
                         </ol>
                     </div>
                     <!-- /.section title start-->

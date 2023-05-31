@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="InterNLP 2022">
+    <meta name="keywords" content="interactive learning, NLP, AI, ML, human in the loop, HITL">
+    <title>InterNLP 2022</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js "></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js "></script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                    <a href="index.html"><img src="images/HITL.png" alt="human in the loop" width="70"></a>
+                </div>
+                <div class="col-lg-11 col-md-10 col-sm-10 col-xs-6">
+                    <div class="navigation">
+                        <div id="navigation">
+                            <ul>
+                                <li class="active"><a href="index.html" title="Home">Home</a></li>
+								<li><a href="schedule.html" title="Schedule">Schedule</a></li>
+                                <li><a href="cfp.html" title="Call for Papers">Call for Papers</a></li>
+                                <li><a href="organization.html" title="Organization">Organization</a> </li>
+                                <li><a href="program_committee.html" title="Program Committee">Program Committee</a> </li>
+                                <li><a href="invited_speakers.html" title="Invited Speakers">Invited Speakers</a> </li>
+								<li><a href="accepted_papers.html" title="Accepted Papers">Accepted Papers</a> </li>
+                                <li><a href="background_references.html" title="Background & References">Background & References</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="hero-title">Second Workshop on Interactive Learning for Natural Language Processing</h1>
+                    <p class="hero-subtitle"><strong>Background & References</strong> </p>
+                </div>
+        </div>
+    </div>
+    <div class="space-small bg-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10">
+                    <div class="mb60 text-left section-title">
+                        <!-- section title start-->
+                        <h1>What is interactive NLP?</h1>
+                        <p><b>Interactive Learning for NLP</b> means training, fine-tuning or otherwise adapting an NLP model
+                            to inputs from a human user or teacher. Relevant approaches range from active learning with
+                            a human in the loop, to training with implicit user feedback (e.g. clicks), dialogue systems
+                            that adapt to user utterances, and training with new forms of human input. Interactive
+                            learning is the converse of  learning from datasets collected offline with no human input
+                            during the training process.</p>
+                    </div>
+                    <!-- /.section title start-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space-small bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10">
+                    <div class="mb60 text-left section-title">
+                        <!-- section title start-->
+                        <h1>What are current approaches?</h1>
+                        <p>Existing methods often treat the user as a human in the loop who is limited to the role of an
+                            oracle. Current NLP research in this vein focuses on techniques such as active learning [1,2],
+                            learning from demonstration [3], and preference learning [4]. Relatively little research has
+                            considered end users choosing the agent's curriculum or machine teaching (e.g., [5]). A
+                            major challenge is adapting large neural models that are expensive to train to a continual
+                            stream of user feedback. An emerging body of work has begun to explore  user feedback via
+                            natural language explanations [6], advice [7] and instructions [8]. Interpreting such inputs
+                            requires relating natural language to the world in which the system operates [9]. GPT-3 [10]
+                            also allows new tasks to be specified via text interaction, presenting new opportunities for
+                            interactive NLP research. While most approaches for dialogue systems do not from learn from
+                            the user's utterances, recent research also investigates conversational methods for eliciting
+                            preferences [11], user intent [12] and language acquisition [13].</br></br>
+
+                            Evaluation with real users is costly, making clear and consistent best practices crucial,
+                            along with user simulations. However, current simulated user models assume random errors in
+                            user feedback, which is often unrealistic [14]. Explainability and interpretability also
+                            play key roles in helping users to understand the effects of their feedback on the model's
+                            behaviour [15]. In summary, there are many promising threads of research that address
+                            different aspects of interactive systems but leave many open questions. There is now a great
+                            opportunity to draw these threads together to develop NLP systems that learn continually
+                            from user interaction.
+                        </p>
+                    </div>
+                    <!-- /.section title start-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space-small bg-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10">
+                    <div class="mb60 text-left section-title">
+                        <!-- section title start-->
+                        <h1>References</h1>
+                        <ol>
+                            <li>Klie, J.-C., de Castilho, R. E., and Gurevych, I. (2020). From zero to hero: Human-in-the-loop entity linking in low resource domains. In The 58th annual meeting of the Association for Computational Linguistics.</li>
+                            <li>Lee, J.-U., Meyer, C. M., and Gurevych, I. (2020). Empowering active learning to jointly optimize system and user demands. In The 58th annual meeting of the Association for Computational Linguistics.</li>
+                            <li>Brantley, K., Sharaf, A., and Daumé, III, H. (2020). Active imitation learning with noisy guidance. In Proceedings of the 58th Conference of the Association for Computational Linguistics.</li>
+                            <li>Simpson, E., Gao, Y., and Gurevych, I. (2019). Interactive text ranking with Bayesian optimisation: A case study on community QA and summarisation. arXiv preprintarXiv:1911.10183.</li>
+                            <li>Dasgupta, S., Hsu, D., Poulis, S., and Zhu, X. (2019). Teaching a black-box learner. volume 97 of Proceedings of Machine Learning Research, pages 1547–1555. PMLR.</li>
+                            <li>Murty, S., Koh, P. W., and Liang, P. (2020). ExpBERT: Representation engineering with natural language explanations. In The 58th annual meeting of the Association for Computational Linguistics.</li>
+                            <li>Mehta, N. and Goldwasser, D. (2019). Improving natural language interaction with robots using advice. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 1962–1967. ACL.</li>
+                            <li>Goldwasser, D. and Roth, D. (2014). Learning from natural instructions. Machine learning, 94(2):205–232.</li>
+                            <li>McClelland, J. L., Hill, F., Rudolph, M., Baldridge, J., and Schütze, H. (2019). Extending machine language models toward human-level language understanding. arXiv preprint arXiv:1912.05877.</li>
+                            <li>Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., et al. (2020). Language models are few-shot learners. arXiv preprint arXiv:2005.14165.</li>
+                            <li>Radlinski, F., Balog, K., Byrne, B., and Krishnamoorthi, K. (2019). Coached conversational preference elicitation: A case study in understanding movie preferences. In Proceedings of the 20th Annual SIGdial Meeting on Discourse and Dialogue, pages 353–360. ACL.</li>
+                            <li>Yu, L., Chen, H., Wang, S. I., Lei, T., and Artzi, Y. (2020). Interactive classification by asking informative questions. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, pages 2664–2680. ACL.</li>
+                            <li>Zhang, H., Yu, H., and Xu, W. (2018). Interactive language acquisition with oneshot visual concept learning through a conversational game. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics, pages 2609–2619. ACL.</li>
+                            <li>Gao, Y., Meyer, C. M., and Gurevych, I. (2019). Preference-based interactive multidocument summarisation. Information Retrieval Journal, pages 1–31.</li>
+                            <li>Smith-Renner, A., Fan, R., Birchfield, M., Wu, T., Boyd-Graber, J., Weld, D. S., and Findlater, L. (2020). No explainability without accountability: An empirical study of explanations and feedback in interactive ML. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems, pages 1–13.</li>
+                        </ol>
+                    </div>
+                    <!-- /.section title start-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- /.footer-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menumaker.js"></script>
+    <!-- sticky header -->
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/sticky-header.js"></script>
+
+</body>
+
+</html>
